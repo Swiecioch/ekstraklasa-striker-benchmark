@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='lech_ishak_impact' inline='true' name='federated.1l1j6yp1wna7n31dr97je1by5jyu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='lech_ishak_impact' name='textscan.0mtpha21i4xzka1h3tabd1mrfmqb'>
+            <connection class='textscan' directory='C:/Users/janja/Desktop/Ishak' filename='lech_ishak_impact.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0mtpha21i4xzka1h3tabd1mrfmqb' name='lech_ishak_impact.csv' table='[lech_ishak_impact#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='string' name='Result' ordinal='1' />
+            <column datatype='integer' name='GF' ordinal='2' />
+            <column datatype='integer' name='GA' ordinal='3' />
+            <column datatype='string' name='Opponent' ordinal='4' />
+            <column datatype='string' name='Venue' ordinal='5' />
+            <column datatype='string' name='Start' ordinal='6' />
+            <column datatype='real' name='Min' ordinal='7' />
+            <column datatype='boolean' name='Ishak_started' ordinal='8' />
+            <column datatype='integer' name='Points' ordinal='9' />
+            <column datatype='string' name='Ishak_status' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[lech_ishak_impact.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;zł&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pl_PL&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[lech_ishak_impact.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Result</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Result]</local-name>
+            <parent-name>[lech_ishak_impact.csv]</parent-name>
+            <remote-alias>Result</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GF]</local-name>
+            <parent-name>[lech_ishak_impact.csv]</parent-name>
+            <remote-alias>GF</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GA]</local-name>
+            <parent-name>[lech_ishak_impact.csv]</parent-name>
+            <remote-alias>GA</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opponent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Opponent]</local-name>
+            <parent-name>[lech_ishak_impact.csv]</parent-name>
+            <remote-alias>Opponent</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Venue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Venue]</local-name>
+            <parent-name>[lech_ishak_impact.csv]</parent-name>
+            <remote-alias>Venue</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Start]</local-name>
+            <parent-name>[lech_ishak_impact.csv]</parent-name>
+            <remote-alias>Start</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Min]</local-name>
+            <parent-name>[lech_ishak_impact.csv]</parent-name>
+            <remote-alias>Min</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ishak_started</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Ishak_started]</local-name>
+            <parent-name>[lech_ishak_impact.csv]</parent-name>
+            <remote-alias>Ishak_started</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Points]</local-name>
+            <parent-name>[lech_ishak_impact.csv]</parent-name>
+            <remote-alias>Points</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ishak_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ishak_status]</local-name>
+            <parent-name>[lech_ishak_impact.csv]</parent-name>
+            <remote-alias>Ishak_status</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='lech_ishak_impact.csv' datatype='table' name='[__tableau_internal_object_id__].[lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Poland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='lech_ishak_impact.csv' id='lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9'>
+            <properties context=''>
+              <relation connection='textscan.0mtpha21i4xzka1h3tabd1mrfmqb' name='lech_ishak_impact.csv' table='[lech_ishak_impact#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='string' name='Result' ordinal='1' />
+                  <column datatype='integer' name='GF' ordinal='2' />
+                  <column datatype='integer' name='GA' ordinal='3' />
+                  <column datatype='string' name='Opponent' ordinal='4' />
+                  <column datatype='string' name='Venue' ordinal='5' />
+                  <column datatype='string' name='Start' ordinal='6' />
+                  <column datatype='real' name='Min' ordinal='7' />
+                  <column datatype='boolean' name='Ishak_started' ordinal='8' />
+                  <column datatype='integer' name='Points' ordinal='9' />
+                  <column datatype='string' name='Ishak_status' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Ishak Impact'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Lech Poznań | Impact of Mikael Ishak on Team Performance</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='lech_ishak_impact' name='federated.1l1j6yp1wna7n31dr97je1by5jyu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l1j6yp1wna7n31dr97je1by5jyu'>
+            <column datatype='integer' name='[GA]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[GF]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Ishak_status]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Min]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Points]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9:qk]' pivot='key' type='quantitative' />
+            <column caption='lech_ishak_impact.csv' datatype='table' name='[__tableau_internal_object_id__].[lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9]' role='measure' type='quantitative' />
+            <column-instance column='[GA]' derivation='Avg' name='[avg:GA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GF]' derivation='Avg' name='[avg:GF:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Points]' derivation='Avg' name='[avg:Points:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ishak_status]' derivation='None' name='[none:Ishak_status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Min]' derivation='Sum' name='[sum:Min:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Points]' derivation='Sum' name='[sum:Points:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1l1j6yp1wna7n31dr97je1by5jyu].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l1j6yp1wna7n31dr97je1by5jyu].[avg:GA:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l1j6yp1wna7n31dr97je1by5jyu].[avg:GF:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l1j6yp1wna7n31dr97je1by5jyu].[avg:Points:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1l1j6yp1wna7n31dr97je1by5jyu].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1l1j6yp1wna7n31dr97je1by5jyu].[__tableau_internal_object_id__].[cnt:lech_ishak_impact.csv_558CF534E25A48B7B0E29DBCDDBF95B9:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1l1j6yp1wna7n31dr97je1by5jyu].[avg:GA:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1l1j6yp1wna7n31dr97je1by5jyu].[avg:GF:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1l1j6yp1wna7n31dr97je1by5jyu].[sum:Min:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1l1j6yp1wna7n31dr97je1by5jyu].[sum:Points:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1l1j6yp1wna7n31dr97je1by5jyu].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1l1j6yp1wna7n31dr97je1by5jyu].[Multiple Values]' scope='cols' value='Average per Match' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1l1j6yp1wna7n31dr97je1by5jyu].[none:Ishak_status:nk]' />
+              <text column='[federated.1l1j6yp1wna7n31dr97je1by5jyu].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1l1j6yp1wna7n31dr97je1by5jyu].[:Measure Names]</rows>
+        <cols>([federated.1l1j6yp1wna7n31dr97je1by5jyu].[none:Ishak_status:nk] * [federated.1l1j6yp1wna7n31dr97je1by5jyu].[Multiple Values])</cols>
+      </table>
+      <simple-id uuid='{189FABE1-8EC2-4E74-8F65-35D4C0174B68}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Ishak Impact'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1l1j6yp1wna7n31dr97je1by5jyu].[none:Ishak_status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l1j6yp1wna7n31dr97je1by5jyu].[:Measure Names]</field>
+            <field>[federated.1l1j6yp1wna7n31dr97je1by5jyu].[none:Ishak_status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F3767C3A-695D-498C-922A-E9CCAFBDBBBA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='159' name='Ishak Impact' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
