@@ -8,7 +8,6 @@ The main question I wanted to answer: **does Lech Poznań actually play worse wi
 
 ## What I found
 
-Turns out it's not just a feeling.
 
 | Metric | With Ishak | Without Ishak |
 |--------|-----------|---------------|
